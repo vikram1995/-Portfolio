@@ -1,0 +1,241 @@
+/*
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Rock Salt', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 16px;
+    color: #545454;
+}
+section{
+   
+    padding-bottom: 80px;
+}
+
+/*----------------------------header start-------------------------------------*/
+
+.landing{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.547),rgba(0, 0, 0, 0.553)),url(../img/header-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+#heading-box{
+    
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+ion-icon{
+    
+    color: white;
+}
+
+
+
+#heading-box h1{
+    font-family: 'Rock Salt', cursive;
+    margin-bottom: 30px;
+}
+
+
+/*----------------------------header end-------------------------------------*/
+
+
+
+/*----------------------------navbar- start-------------------------------------*/
+nav {
+    position: absolute;
+    top: 3%;
+    left: 70%;
+    color: white;
+}
+nav li{
+    
+    color: white;
+    display: inline;
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+}
+
+
+
+/*----------------------------navbar-end-------------------------------------*/
+
+
+/*----------------------------about-section-start-------------------------------------*/
+.about h2{
+    
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: -40px;
+    font-size: 2em;
+    
+}
+
+.my-photo{
+    display: block;
+    margin-right: auto;
+    margin-left: 10%;
+    border-radius: 50%;
+    height:200px;
+    margin-top: 40px;
+    float: left;
+    
+    
+}
+.about-me-box{
+    
+    padding: 50px;
+
+}
+
+.about-para{
+    margin-top: 70px;
+    padding-left:100px;
+    margin-left: 300px;
+    margin-right: 40px;
+    width: 70%;
+    text-align: justify;
+    line-height:30px;
+    word-spacing: 4px;
+    font-size: 1.5em;
+    
+}
+
+
+
+
+
+/*----------------------------about-section-end-------------------------------------*/
+
+/*----------------------------project section start-------------------------------------*/
+
+.projects h2{
+    text-align: center;
+    
+    
+    
+    font-size: 2em;
+}
+.projects
+{
+    background-color: #e6e3e3;
+    padding: 50px;
+}
+.projects ul{
+    margin-top: 70px;
+    margin-left: 400px;
+    
+}
+.projects li{
+    margin-bottom: 50px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: #545454;
+    font-size: 1.25em;
+}
+
+.projects p{
+    font-size: 1.2em;
+}
+
+
+
+/*----------------------------project section end -------------------------------------*/
+
+
+
+
+
+/*----------------------------skills section start -------------------------------------*/
+.skills{
+    background-color: white;
+}
+
+/*----------------------------skills section end -------------------------------------*/
+
+
+/*----------------------------education section start -------------------------------------*/
+.education{
+    text-align: center;
+}
+
+.education table{
+    border-collapse: collapse;
+    margin: 40px auto;
+    width: 80%;
+    height: 300px;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+
+
+  /*----------------------------education section end -------------------------------------*/
+
+
+  /*----------------------------contact-form section starts -------------------------------------*/
+  .contact-me{
+      background-color: white;
+      
+  }
+
+  .contact-me ul{
+    margin-left: 0;
+    padding: 0 100px;
+  }
+
+  .contact-me li{
+      margin-bottom: 17px;
+  }
+
+  .form{
+      width: 800px;
+      
+      margin: 0 auto;
+     
+  }
+  input{
+      margin-left: 20px;
+      border-style: none;
+      border: 1px solid #BEBEBE;
+      padding: 7px;
+  }
+
+  form li{
+      list-style: none;
+  }
+  
+.btn{
+    margin: 0 auto;
+}
+.btn input{
+    background-color: #EA7B00;;
+    padding: 12px 25px 16px 25px;
+    border-radius: 5px;
+    color: white;;
+    
+}
+  /*----------------------------contact-form section end -------------------------------------*/

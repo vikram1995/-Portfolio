@@ -4,92 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700|Rock+Salt&display=swap" rel="stylesheet">    
+    <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
-    <h3 class="social-media"style="float: right;"><a href="https://www.linkedin.com/in/vikram-kumar-mandal-691225164/">LinkedIn</a><br><a href="https://www.facebook.com/vikram.mandal.5648?ref=bookmarks">facebook</a></h3>
-    <h1><strong>Vikram Kumar Mandal</strong></h1>
+    <header class="landing">
+        <div id="heading-box">
+            <h1>I am Vikram.</h1>
+            <span>a Front-End Web Developer.</span> <br><br>
+            <a href="https://www.linkedin.com/in/vikram-kumar-mandal-691225164/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/vikram1995" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.facebook.com/vikram.mandal.5648?ref=bookmarks" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        
+    </header>
+    <nav>
+        
+        <ul>
+            <a href="#ab"><li>About</li></a>
+            <a href="#ed"><li>Education</li></a>
+            <a href="#sk"><li>Skills</li></a>
+            <a href="#pj"><li>Projects</li></a>
+            <a href="#con"><li>Contact Me</li></a>
+            
+        </ul>
+
+    </nav>
+
+     
+<!--About me section start -->
+
+    <section class="about" id="ab">
+        <h2>About Me</Menu></h2>
+        <div class="about-me-box">
+            <div>
+                <img class="my-photo" src="./img/display-pic.jpeg" alt="display pic">
+            </div>
+            
+        <p class="about-para">
+            I'm a motivated front-end web engineer who has experience building and scaling web applications and services in various domains.
+            I'm also passionate about open source contributions, working in high impact environments with frequent deployments, and helping growing development teams build great products.</p>
+        </div>
+        
+
+    </section>
+
+
+<!--About me section end -->
+
+
+
+<!--Projects section start -->
+
+    <section class="projects" id="pj">
+
+        <h2>Projects</h2>
+        
+        <div>
+           <ul>
+               <li>
+                   <h3><a href="https://www.ankacharity.org/">Anka charity website</a></h3><br>
+                   <p>A static website for NGO group built with HTML, CSS and BootStrap with ranked first result on google for brand keyword "anka charity"</p>
+               </li>
+
+               <li>
+                   <h3><a href="https://indusinternational.co.in/">Indus International company website</a></h3><br>
+                   <p>A official website for the company built with HTML, CSS and Bootstrap</p>
+               </li>
+               
+           </ul>
+           
+        </div>
+
+
+    </section>
+
+
+
+    <!--Projects section ends -->
+
+
+
+    <!--Skills section start -->
+
+    <section class="skills projects" id="sk">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                <h3>Languages & Frameworks</h3><br>
+                <p>C++, Data Structures & Algorithms, HTML, CSS, BootStrap, JavaScript (ES6+), React</p>
+            </li>
+
+            <li>
+                <h3>Source Control</h3><br>
+                <p>Git</p>
+            </li>
+        </ul>
+    </section>
+
+
+    <!--Skills section end -->
+
+
+    <!--education section start -->
+
+    <section class="education projects" id="ed">
+
+        <h2>Education</h2>
+
+       <table border="2px black bold">
+           <tr>
+               <th>Degree</th>
+               <th>Discipline/Board</th>
+               <th>Institute/School</th>
+               <th>Year of Passing</th>
+               <th>Percentage/CGPA</th>
+           </tr>
+
+           <tr>
+               <td>B.tech</td>
+               <td>Electronics and communication Engineering</td>
+               <td>RNS Institute of Technology</td>
+               <td>2018</td>
+               <td>59.62</td>
+           </tr>
+           <tr>
+               <td>12th</td>
+               <td> PCM + Computer Science, CBSE Board</td>
+               <td>Kendriya Vidyalaya, Borjhar</td>
+               <td>2013</td>
+               <td>75 %</td>
+           </tr>
+           <tr>
+               <td>10th</td>
+               <td>CBSE (CCE pattern)</td>
+               <td>Kendriya Vidyalaya, Borjhar</td>
+               <td>2011</td>
+               <td>7.8 CGPA</td>
+           </tr>
+       </table>
+
+    </section>
+
+    <!--education section ends -->
+
+
+
+<!--contact section starts -->
+
+    <section class="contact-me projects" id="con">
+        <h2>Contact Me</h2>
+
+        <form action="" class="form" onsubmit="popUp()">
+            <ul>
+                <li>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name">
+                </li>
+                <li>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </li>
+                <li>
+                    <h3>Gender</h3>
+                    <br>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender">
+                    <br><br>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender">
+                </li>
+                <li>
+                    <label for="dateOfBirth">Date Of Birth:</label>
+                    <input type="date" id="dateOfBirth">
+                </li>
+                <li class="btn">
+                    <input type="submit" value="submit">
+                </li>
+            </ul>
+            
+        </form>
+
+    </section>
+
+    <!--contact section ends -->
+
     
-    <h5>Contact: +91 8709384808</h5>
-    <h5>Email: vikram.1rn14ec170@gmail.com</h5>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
-    <h3>Skills</h3>
-    <ul>
-        <li><strong>Languages :</strong> C++,JavaScript</li>
-        <li><strong>Front End Frameworks : </strong>React.js</li>
-        <li><strong>Source Control : </strong>Git</li>
-    </ul>
-    <br>
-    <h3>Education</h3>
-    <table style="text-align: center;">
-        <tr>
-            <th>Degree </th>
-        <th>&nbsp;&nbsp;&nbsp; Discipline/Board &nbsp;&nbsp;&nbsp;</th>
-        <th>&nbsp;&nbsp;&nbsp; Institute/School&nbsp;&nbsp;&nbsp; </th>
-        <th>&nbsp;&nbsp;&nbsp; Year of Passing &nbsp;&nbsp;&nbsp;</th>
-        <th> &nbsp;&nbsp;&nbsp;Percentage/CGPA &nbsp;&nbsp;&nbsp;</th>
-        </tr>
-
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;B.tech&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;Electronics and communication Engineering&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;RNS Institute of Technology&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;2018&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;59.9&nbsp;&nbsp;&nbsp;</td>
-        </tr>
-
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;12th&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;PCM + Computer Science,&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;CBSE Board&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;Kendriya Vidyalaya, Borjhar&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;75 %&nbsp;&nbsp;&nbsp;</td>
-        </tr>
-
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;10th&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;CBSE (CCE pattern)&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;Kendriya Vidyalaya, Borjhar&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;7.8 CGPA&nbsp;&nbsp;&nbsp;</td>
-        </tr>
-        
-
-
-    </table>
-
-    <br>
-    <h3>Projects</h3>
-
-    <br><br><br><br>
-    <h3>Contact Me</h3>
-    <br>
-    <form action="">
-        <label for="firstName">First Name: </label>
-        
-        <input type="text" id="firstName" name="firstName">
-        <br>
-        <label for="lastName">Last Name: </label>
-        
-        
-        <input type="text" id="lastName" name="lastName">
-        <br>
-        
-        <h4>Gender:</h4>
-        <input type="radio" name="gender" value="Male" id="male">
-        <label for="male"> Male</label>
-        <br>
-        <input type="radio" name="gender" value="Female" id="female">
-        <label for="female"> Female</label><br><br>
-        <label for="email">Email: </label>
-        <input type="email" id="email"><br>
-        <label for="dob">Date Of Birth: </label>
-        <input type="date" id="dob"><br><br>
-        <input type="submit" value="submit">
-        <br>
-        <br>
-        
-    </form>
-    
 </body>
 </html>
