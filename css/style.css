@@ -12,6 +12,7 @@ font-family: 'Rock Salt', cursive;
 body{
     font-family: 'Nanum Myeongjo', serif;
     font-size: 16px;
+    font-weight: 600;
     color: #545454;
 }
 section{
@@ -23,6 +24,7 @@ section{
 
 .landing{
     background-image: linear-gradient(rgba(0, 0, 0, 0.547),rgba(0, 0, 0, 0.553)),url(../img/header-background.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,27 +56,45 @@ ion-icon{
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width:1000px)
+{
+    .landing{
+        height: 60vh;
+    }
+
+    #heading-box{
+        top:55%;
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width:500px)
+{
+    .landing{
+        height: 60vh;
+    }
+
+    #heading-box{
+        top:60%;
+        font-size: 1.5em;
+    }
+}
 
 /*----------------------------header end-------------------------------------*/
+.navbar{
+    opacity: 0.8;
+    
+}
+
+.brand-img{
+    border-radius: 50%;
+    height: 40px;
+}
 
 
 
 /*----------------------------navbar- start-------------------------------------*/
-nav {
-    position: absolute;
-    top: 3%;
-    left: 70%;
-    color: white;
-}
-nav li{
-    
-    color: white;
-    display: inline;
-    padding: 10px;
-}
-nav a{
-    text-decoration: none;
-}
+
 
 
 
@@ -99,7 +119,7 @@ nav a{
     border-radius: 50%;
     height:200px;
     margin-top: 40px;
-    float: left;
+    
     
     
 }
@@ -111,18 +131,62 @@ nav a{
 
 .about-para{
     margin-top: 70px;
-    padding-left:100px;
-    margin-left: 300px;
-    margin-right: 40px;
-    width: 70%;
+    
     text-align: justify;
     line-height:30px;
     word-spacing: 4px;
     font-size: 1.5em;
+
+    /* padding-left:100px;
+    margin-left: 300px;
+    margin-right: 40px;
+    width: 70%; */
     
 }
 
+@media only screen and (max-width: 1200px){
 
+    .about-para{
+        margin-left: 25px;
+    }
+
+    .my-photo{
+        margin-top: 70px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+    .about-para{
+        margin-left: 90px;
+        text-align: inherit;
+    }
+
+    .my-photo{
+        margin-top: 70px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .about-para{
+        margin-left: 90px;
+        text-align: inherit;
+        margin: 0 auto;
+    }
+
+    .my-photo{
+        margin-top:10px;
+        margin-bottom: 20px;
+        height: 180px;
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+ 
+    }
+}
 
 
 
@@ -162,6 +226,42 @@ nav a{
 }
 
 
+@media only screen and (max-width: 1200px)
+{
+    .projects ul{
+        
+        margin-left: 170px;
+        
+    } 
+}
+
+
+@media only screen and (max-width: 991px){
+
+    .projects ul{
+        
+        margin-left: 80px;
+        
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .projects ul{
+        
+        margin-left: 40px;
+        
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .projects ul{
+        
+        margin-left: 12px;
+        
+    }
+}
 
 /*----------------------------project section end -------------------------------------*/
 
@@ -202,6 +302,8 @@ table, th, td {
       
   }
 
+  /*
+
   .contact-me ul{
     margin-left: 0;
     padding: 0 100px;
@@ -238,4 +340,5 @@ table, th, td {
     color: white;;
     
 }
+*/
   /*----------------------------contact-form section end -------------------------------------*/
