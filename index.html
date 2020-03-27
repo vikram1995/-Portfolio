@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    
     <script src="script.js" ></script>
     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700|Rock+Salt&display=swap" rel="stylesheet">    
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="landing">
@@ -20,33 +22,46 @@
         </div>
         
     </header>
-    <nav>
-        
-        <ul>
-            <a href="#ab"><li>About</li></a>
-            <a href="#ed"><li>Education</li></a>
-            <a href="#sk"><li>Skills</li></a>
-            <a href="#pj"><li>Projects</li></a>
-            <a href="#con"><li>Contact Me</li></a>
-            
-        </ul>
 
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img class="brand-img" src="./img/display-pic.jpeg" alt="display pic"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            
+            <a class="nav-item nav-link" href="#about-link">About Me</a>
+            <a class="nav-item nav-link" href="#project-link">Projects</a>
+            <a class="nav-item nav-link" href="#skills-link">Skills</a>
+            <a class="nav-item nav-link" href="#education-link">Education</a>
+            <a class="nav-item nav-link" href="#contact-link">Contact Me</a> 
+          </div>
+        </div>
+      </nav>
+   
+
+   
 
      
 <!--About me section start -->
 
-    <section class="about" id="ab">
+    <section class="about" id="about-link">
         <h2>About Me</Menu></h2>
-        <div class="about-me-box">
-            <div>
+
+        <div class="container about-me-box">
+            <div class="row">
+              <div class="col-md-3">
                 <img class="my-photo" src="./img/display-pic.jpeg" alt="display pic">
+              </div>
+              <div class="col-md-9">
+                <p class="about-para">
+                    I'm a motivated front-end web engineer who has experience building and scaling web applications and services in various domains.
+                    I'm also passionate about open source contributions, working in high impact environments with frequent deployments, and helping growing development teams build great products.</p>
+              </div>
+              
             </div>
-            
-        <p class="about-para">
-            I'm a motivated front-end web engineer who has experience building and scaling web applications and services in various domains.
-            I'm also passionate about open source contributions, working in high impact environments with frequent deployments, and helping growing development teams build great products.</p>
-        </div>
+          </div>
         
 
     </section>
@@ -58,7 +73,7 @@
 
 <!--Projects section start -->
 
-    <section class="projects" id="pj">
+    <section class="projects" id="project-link">
 
         <h2>Projects</h2>
         
@@ -89,7 +104,7 @@
 
     <!--Skills section start -->
 
-    <section class="skills projects" id="sk">
+    <section class="skills projects" id="skills-link">
         <h2>Skills</h2>
         <ul>
             <li>
@@ -110,42 +125,51 @@
 
     <!--education section start -->
 
-    <section class="education projects" id="ed">
+    <section class="education projects" id="education-link">
 
         <h2>Education</h2>
+        <div class="table-responsive-sm">
+            <table class="table">
 
-       <table border="2px black bold">
-           <tr>
-               <th>Degree</th>
-               <th>Discipline/Board</th>
-               <th>Institute/School</th>
-               <th>Year of Passing</th>
-               <th>Percentage/CGPA</th>
-           </tr>
-
-           <tr>
-               <td>B.tech</td>
-               <td>Electronics and communication Engineering</td>
-               <td>RNS Institute of Technology</td>
-               <td>2018</td>
-               <td>59.62</td>
-           </tr>
-           <tr>
-               <td>12th</td>
-               <td> PCM + Computer Science, CBSE Board</td>
-               <td>Kendriya Vidyalaya, Borjhar</td>
-               <td>2013</td>
-               <td>75 %</td>
-           </tr>
-           <tr>
-               <td>10th</td>
-               <td>CBSE (CCE pattern)</td>
-               <td>Kendriya Vidyalaya, Borjhar</td>
-               <td>2011</td>
-               <td>7.8 CGPA</td>
-           </tr>
-       </table>
-
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Degree</th>
+                        <th scope="col">Discipline/Board</th>
+                        <th scope="col">Institute/School</th>
+                        <th scope="col">Year of Passing</th>
+                        <th scope="col">Percentage/CGPA</th>
+                    </tr>
+                </thead>
+                   
+                <tbody>
+                    <tr scope="row">
+                        <td>B.tech</td>
+                        <td>Electronics and communication Engineering</td>
+                        <td>RNS Institute of Technology</td>
+                        <td>2018</td>
+                        <td>59.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12th</td>
+                        <td> PCM + Computer Science, CBSE Board</td>
+                        <td>Kendriya Vidyalaya, Borjhar</td>
+                        <td>2013</td>
+                        <td>75 %</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10th</td>
+                        <td>CBSE (CCE pattern)</td>
+                        <td>Kendriya Vidyalaya, Borjhar</td>
+                        <td>2011</td>
+                        <td>7.8 CGPA</td>
+                    </tr>
+        
+                </tbody>
+                   
+               </table>
+        
+        </div>
+       
     </section>
 
     <!--education section ends -->
@@ -154,10 +178,103 @@
 
 <!--contact section starts -->
 
-    <section class="contact-me projects" id="con">
+    <section class="contact-me projects container" id="contact-link">
         <h2>Contact Me</h2>
 
-        <form action="" class="form" onsubmit="popUp()">
+        <form class="needs-validation" novalidate onsubmit="popUp()">
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Email</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please provide your email.
+                  </div>
+                </div>
+              </div>
+
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Female
+                      </label>
+                    </div>
+                    
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+             
+              
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  if (form.checkValidity() === true)
+                  {
+                    alert("I will revert to you shortly");
+                  }
+                  form.classList.add('was-validated');
+                  
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+
+<!--
+    <form action="" class="form" onsubmit="popUp()">
             <ul>
                 <li>
                     <label for="first-name">First Name:</label>
@@ -190,6 +307,8 @@
             </ul>
             
         </form>
+-->
+        
 
     </section>
 
@@ -197,6 +316,9 @@
 
     
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
