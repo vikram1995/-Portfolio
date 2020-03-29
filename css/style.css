@@ -53,7 +53,7 @@ ion-icon{
 
 #heading-box h1{
     font-family: 'Rock Salt', cursive;
-    margin-bottom: 30px;
+    
 }
 
 @media only screen and (max-width:1000px)
@@ -105,17 +105,12 @@ ion-icon{
 .about h2{
     
     text-align: center;
-    margin: 0px auto;
-    margin-top: 80px;
-    margin-bottom: -40px;
     font-size: 2em;
     
 }
 
 .my-photo{
     display: block;
-    margin-right: auto;
-    margin-left: 10%;
     border-radius: 50%;
     height:200px;
     margin-top: 40px;
@@ -123,15 +118,9 @@ ion-icon{
     
     
 }
-.about-me-box{
-    
-    padding: 50px;
-
-}
 
 .about-para{
     margin-top: 70px;
-    
     text-align: justify;
     line-height:30px;
     word-spacing: 4px;
